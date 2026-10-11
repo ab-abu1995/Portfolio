@@ -5,8 +5,7 @@ import { profile, socials } from "../data/content.js";
 export default function Footer() {
   return (
     <footer className="footer">
-      <a href="#home" className="logo" aria-label="Back to top">{profile.initials}</a>
-      <p>© {new Date().getFullYear()} {profile.name}</p>
+      <p>© <i>{new Date().getFullYear()} <br /> {profile.name}</i></p>
       <div className="foot-r">
         {socials.map((s) => (
           <a key={s.icon} className="ibtn" href={s.link} aria-label={s.icon} title={s.icon}
